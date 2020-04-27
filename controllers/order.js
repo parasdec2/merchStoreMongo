@@ -42,6 +42,7 @@ exports.createOrder = (req, res) => {
       pincode: req.body.order.shippingDetails.pincode.pincode,
       state: req.body.order.shippingDetails.state.state,
       phone: req.body.order.shippingDetails.phone.phone,
+      email: req.body.order.shippingDetails.email.email,
     },
     user: req.body.order.user._id,
     status: req.body.order.status ? req.body.order.status : "Recieved",
